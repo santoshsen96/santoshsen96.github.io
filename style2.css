@@ -1,0 +1,385 @@
+/* Reset some default styles for better consistency */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header styles */
+.sidebar, #nav-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar, #main, #nav-menu, main {
+    padding: 20px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.sidebar {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 100%;
+    overflow-x: hidden;
+    transition: 0.5s;
+    background-color: #111;
+    color: white;
+}
+
+.sidebar a {
+    padding: 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+#main {
+    margin-left: 0;
+    transition: margin-left 0.5s;
+}
+
+/* Navbar styles */
+#nav-menu {
+    background-color: #333;
+    color: white;
+}
+
+.name img {
+    margin-bottom: 10px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+.nav-link:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Home section styles */
+#home {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.home-img {
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+.about__buttons {
+    margin-top: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button--flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+    .sidebar {
+        width: 100%;
+    }
+
+    #main {
+        margin-left: 0;
+    }
+}
+
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Global styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+/* About Section styles */
+#about {
+    text-align: center;
+}
+
+#about h2 {
+    color: #333;
+}
+
+#user-detail-intro {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+}
+
+#aboutflex {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#con {
+    display: flex;
+    gap: 10px;
+}
+
+#con a img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Skills Section styles */
+#skills {
+    text-align: center;
+}
+
+#skills h2 {
+    color: #333;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 20px;
+}
+
+.skills-card {
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.skills-card-img {
+    width: 50px;
+    height: 50px;
+}
+
+.skills-card-name {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Global styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+/* Projects Section styles */
+#projects {
+    text-align: center;
+}
+
+#projects h2 {
+    color: #333;
+}
+
+.project-card {
+    margin-bottom: 40px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+}
+
+.project-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.project-description {
+    padding: 10px;
+}
+
+.projectlinks {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.project-github-link,
+.project-deployed-link {
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Github Stats Section styles */
+#stats {
+    text-align: center;
+}
+
+#stats h2 {
+    color: #333;
+}
+
+#github-top-langs,
+#github-stats-card,
+#github-streak-stats {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px 0;
+}
+
+/* Github Calendar Section styles */
+#calendar {
+    text-align: center;
+}
+
+#calendar h2 {
+    color: #333;
+}
+
+.react-activity-calendar {
+    margin: 20px 0;
+}
+
+/* Contact Section styles */
+#contact {
+    text-align: center;
+}
+
+#contact h2 {
+    color: #333;
+}
+
+.contactflex {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+#contact-github,
+#contact-linkedin,
+#contact-phone,
+#contact-email {
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.name {
+    margin-top: 20px;
+    color: #666;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .project-card {
+        margin-bottom: 20px;
+    }
+
+    #github-top-langs,
+    #github-stats-card,
+    #github-streak-stats {
+        max-width: 100%;
+    }
+}

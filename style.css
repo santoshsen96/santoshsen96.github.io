@@ -8,6 +8,7 @@ body{
   
   #width {
     margin: 7%;
+    
   }
   
   #nav-menu{
@@ -419,13 +420,13 @@ body{
       margin-right: auto;
       width: 50%;
     }
-    #stats>div{
+    /* #stats>div{
     flex-direction: column;
     }
   #stats>div>img{
     margin-left: 13%;
     margin-bottom: 3%;
-  }
+  } */
   #grid {
   
     grid-template-columns: repeat(3, 1fr);
@@ -470,7 +471,104 @@ body{
     row-gap: 0;
   } 
   
-  
+  /* GitHub Calendar Section */
+.react-activity-calendar {
+  max-width: 100%;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.react-activity-calendar img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+  .react-activity-calendar {
+      margin: 10px 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .react-activity-calendar {
+      margin: 5px 0;
+  }
+}
+
+/* GitHub Stats Section */
+#stats {
+  text-align: center;
+  margin-top: 40px;
+}
+
+#stats h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+#stats hr {
+  border: 1px solid #ddd;
+  margin: 15px 0;
+}
+
+/* GitHub Top Languages */
+#github-top-langs {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* GitHub Stats Card and Streak Stats */
+#statsimg {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#github-stats-card,
+#github-streak-stats {
+  max-width: 100%;
+  height: auto;
+  margin: 0 10px 20px;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+  #stats h2 {
+      font-size: 20px;
+  }
+
+  #stats hr {
+      margin: 10px 0;
+  }
+
+  #github-top-langs {
+      margin-bottom: 15px;
+  }
+
+  #statsimg {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  #github-stats-card,
+  #github-streak-stats {
+      margin: 0 0 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #stats h2 {
+      font-size: 18px;
+  }
+
+  #github-top-langs {
+      margin-bottom: 10px;
+  }
+}
+
   
   
   
