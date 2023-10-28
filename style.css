@@ -471,8 +471,8 @@ body{
     row-gap: 0;
   } 
   
-  /* GitHub Calendar Section */
-.react-activity-calendar {
+ /* GitHub Calendar Section */
+/* .react-activity-calendar {
   max-width: 100%;
   overflow: hidden;
   margin: 20px 0;
@@ -482,7 +482,7 @@ body{
   width: 100%;
   height: auto;
   display: block;
-}
+} */
 
 /* Responsive Styling */
 @media screen and (max-width: 768px) {
